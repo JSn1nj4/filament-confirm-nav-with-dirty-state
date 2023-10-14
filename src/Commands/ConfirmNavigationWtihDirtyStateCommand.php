@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace JSn1nj4\ConfirmNavigationWtihDirtyState\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class ConfirmNavigationWtihDirtyStateCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-confirm-nav-with-dirty-state';
 
     public $description = 'My command';
 

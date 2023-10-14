@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace JSn1nj4\ConfirmNavigationWtihDirtyState\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
@@ -18,7 +18,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;
-use VendorName\Skeleton\SkeletonServiceProvider;
+use JSn1nj4\ConfirmNavigationWtihDirtyState\ConfirmNavigationWtihDirtyStateServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -27,7 +27,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'VendorName\\Skeleton\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'JSn1nj4\\ConfirmNavigationWtihDirtyState\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
@@ -48,7 +48,7 @@ class TestCase extends Orchestra
             SupportServiceProvider::class,
             TablesServiceProvider::class,
             WidgetsServiceProvider::class,
-            SkeletonServiceProvider::class,
+            ConfirmNavigationWtihDirtyStateServiceProvider::class,
         ];
     }
 
@@ -57,7 +57,7 @@ class TestCase extends Orchestra
         config()->set('database.default', 'testing');
 
         /*
-        $migration = include __DIR__.'/../database/migrations/create_skeleton_table.php.stub';
+        $migration = include __DIR__.'/../database/migrations/create_filament-confirm-nav-with-dirty-state_table.php.stub';
         $migration->up();
         */
     }

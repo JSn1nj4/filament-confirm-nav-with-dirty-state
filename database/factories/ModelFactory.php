@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Database\Factories;
+namespace JSn1nj4\ConfirmNavigationWtihDirtyState\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

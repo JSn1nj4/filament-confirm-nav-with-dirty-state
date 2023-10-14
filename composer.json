@@ -1,62 +1,52 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "jsn1nj4/filament-confirm-nav-with-dirty-state",
+    "description": "A Filament plugin for adding a confirmation dialog when a form is dirty",
     "keywords": [
-        ":vendor_name",
+        "JSn1nj4",
         "laravel",
-        ":package_slug"
+        "filament-confirm-nav-with-dirty-state"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/jsn1nj4/filament-confirm-nav-with-dirty-state",
     "support": {
-        "issues": "https://github.com/:vendor_slug/:package_slug/issues",
-        "source": "https://github.com/:vendor_slug/:package_slug"
+        "issues": "https://github.com/jsn1nj4/filament-confirm-nav-with-dirty-state/issues",
+        "source": "https://github.com/jsn1nj4/filament-confirm-nav-with-dirty-state"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Elliot Derhay",
+            "email": "elliot@elliotderhay.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
-        "filament/filament": "^3.0",
         "filament/forms": "^3.0",
-        "filament/tables": "^3.0",
         "spatie/laravel-package-tools": "^1.15.0",
         "illuminate/contracts": "^10.0"
     },
     "require-dev": {
-        "laravel/pint": "^1.0",
         "nunomaduro/collision": "^7.9",
-        "nunomaduro/larastan": "^2.0.1",
         "orchestra/testbench": "^8.0",
         "pestphp/pest": "^2.0",
         "pestphp/pest-plugin-arch": "^2.0",
-        "pestphp/pest-plugin-laravel": "^2.0",
-        "phpstan/extension-installer": "^1.1",
-        "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "spatie/laravel-ray": "^1.26"
+        "pestphp/pest-plugin-laravel": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "JSn1nj4\\ConfirmNavigationWtihDirtyState\\": "src/",
+            "JSn1nj4\\ConfirmNavigationWtihDirtyState\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "JSn1nj4\\ConfirmNavigationWtihDirtyState\\Tests\\": "tests/"
         }
     },
     "scripts": {
         "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
-        "analyse": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage",
-        "format": "vendor/bin/pint"
+        "test-coverage": "vendor/bin/pest --coverage"
     },
     "config": {
         "sort-packages": true,
@@ -68,10 +58,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "JSn1nj4\\ConfirmNavigationWtihDirtyState\\ConfirmNavigationWtihDirtyStateServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "ConfirmNavigationWtihDirtyState": "JSn1nj4\\ConfirmNavigationWtihDirtyState\\Facades\\ConfirmNavigationWtihDirtyState"
             }
         }
     },
